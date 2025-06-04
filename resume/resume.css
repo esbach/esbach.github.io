@@ -1,0 +1,176 @@
+/* cv css styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+:root {
+    --page-width: 210mm;
+    --page-margin: 12mm;
+    --sidebar-width: 65mm;
+    --sidebar-border: 1px solid #ccc;
+    --sidebar-border-radius: 8px;
+    --sidebar-horizontal-padding: 5mm;
+    --sidebar-vertical-padding: 3mm;
+    --sidebar-background: whitesmoke;
+    --content-width: calc(var(--page-width) - (var(--page-margin) * 2));
+    --main-width: calc(var(--content-width) - var(--sidebar-width));
+    --main-left-padding: 0;
+    --main-right-padding: 8mm;
+    --paper-colour: white;
+    --paper-shadow-colour: #bfbfbf;
+    --text-colour: #444;
+    --text-font-size: 10pt;
+    --title-font-size: 22pt;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 12mm;
+
+    @bottom-right {
+        content: "Updated: May 2025";
+        padding: 2mm 4mm;
+        width: 70mm;
+        height: 10mm;
+        font-size: 8pt;
+    }
+}
+
+@page part1 {
+    /* rules for part1 */
+}
+
+@page part2 {
+    /* rules for part2 */
+}
+
+#cv-page-1 {
+    page: cv-page-1;
+}
+
+#cv-page-2 {
+    page: cv-page-2;
+}
+
+/* style and interface */
+
+body {
+    background-color: var(--paper-colour);
+    font-size: var(--text-font-size);
+    font-weight: 300;
+    color: var(--text-colour);
+    font-family: "Belleza", "Open Sans", sans-serif;
+    hyphens: auto;
+    line-height: 16px;
+}
+
+section {
+    break-before: page;
+}
+
+h1 {
+    font-size: var(--title-font-size);
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 16pt;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.sidebar h2 {
+    font-size: 12pt;
+}
+
+h3 {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.date {
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 16pt;
+}
+
+li {
+    margin-left: -4.25pt;
+}
+
+.main {
+    width: var(--main-width);
+    padding-left: var(--main-left-padding);
+    padding-right: var(--main-right-padding);
+    padding-top: 0;
+    padding-bottom: 0;
+    float: left;
+}
+
+.subsection {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.2;
+}
+
+
+.title {
+    position: relative;
+    left: 0;
+    line-height: 1.2;
+    padding-bottom: 12px;
+}
+
+.title h1 {
+    font-size: var(--title-font-size);
+    font-weight: 300;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.title p {
+    padding-top: 0;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    padding-left: var(--sidebar-horizontal-padding);
+    padding-right: var(--sidebar-horizontal-padding);
+    padding-top: var(--sidebar-vertical-padding);
+    padding-bottom: var(--sidebar-vertical-padding);
+    float: right;
+    position: absolute;
+    right: 0;
+    border: var(--sidebar-border);
+    border-radius: var(--sidebar-border-radius);
+    background-color: var(--sidebar-background);
+}
+
+@media screen,
+pagedjs-ignore {
+
+    .pagedjs_page {
+        background-color: var(--paper-colour);
+        box-shadow: 0 0 0 1px var(--paper-shadow-colour);
+        margin: 1mm;
+    }
+
+    .pagedjs_pages {
+        display: flex;
+        max-width: var(--pagedjs-width); /* for two pages: calc(var(--pagedjs-width) * 2 + 5mm); */ 
+        flex: 0;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+}

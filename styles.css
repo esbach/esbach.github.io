@@ -1,0 +1,190 @@
+/* css styles */
+
+/* Make navbar white on scroll, with shadow */
+.headroom--not-top .navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar text colors */
+.navbar .nav-link {
+  color: #444 !important;        /* Default text color */
+}
+
+/* Navbar hover/active colors */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  /* color: #065a96 !important; Color on hover or active */
+  text-decoration: underline !important;
+}
+
+/* Navbar hover/active colors */
+.navbar-brand {
+  color: #444 !important;
+}
+
+.navbar-brand:hover {
+  color: grey !important;
+}
+
+.navbar-brand {
+  font-weight: 400;
+}
+
+/* Navbar animation */
+.my-title {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-family: 'Source Sans Pro', sans-serif;  /* Match global font */
+  font-weight: 400;                            /* Match navbar-brand */
+  font-size: 1.25rem;                          /* Adjust if needed */
+  color: black !important;                      /* Match default color */
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+/* Corner bracket: top-right */
+.my-title::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  transform: translate(-100%, 50%);
+  opacity: 0;
+  transition: all 0.35s ease;
+  z-index: 10;
+}
+
+/* Corner bracket: bottom-left */
+.my-title::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  transform: translate(100%, -50%);
+  opacity: 0;
+  transition: all 0.35s ease;
+  z-index: 10;
+}
+
+.my-title:hover::before,
+.my-title:hover::after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+/* Remove center footer if never used */
+.nav-footer-center {
+  display: none;
+}
+
+/* Remove underline from footer */
+.nav-footer a {
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Set global font weight */
+/* Match Hugo Story heading style */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.375;
+  letter-spacing: -0.05em;
+  margin: 0 0 1rem;
+}
+
+/* Ensure links in headers look clean */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hugo-style font sizes */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+
+/* Optional: tighten body spacing */
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Hide the default mobile lines icon */
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+
+/* Create custom lines */
+.navbar-toggler::before,
+.navbar-toggler::after {
+  content: '';
+  display: block;
+  width: 30px; /* Adjust width as needed */
+  height: 2px; /* Adjust thickness as needed */
+  background-color: grey; /* Adjust color as needed */
+  margin: 5px 0; /* Adjust spacing as needed */
+}
+
+/* Remove border, background, and shadow from the hamburger toggle */
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Adjust footer order on small screens */
+@media (max-width: 767.98px) {
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;  /* Center text inside each */
+  }
+
+  .nav-footer-left {
+    order: 2;
+  }
+
+  .nav-footer-right {
+    order: 1;
+  }
+}

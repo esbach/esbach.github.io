@@ -1,0 +1,40 @@
+---
+project:
+  type: website
+
+format:
+  html:
+    page-layout: full
+    toc: true
+    
+title: "Work"
+---
+
+One of the most venerable traditions of academia is to include a page drily listing the [scholarly](https://scholar.google.com/citations?user=QPH_lRIAAAAJ).
+
+
+## Papers
+
+### 2025
+
+  - Correia, J. E., Piaguage Lucitante, J., Weiss, L., Narváez, N., Lucitante, L., Biaguaje, A., ... & Esbach, M. (2025). Stimulating reciprocity: How human–plant relations support Indigenous cultural revitalization and stewardship in the Ecuadorian Amazon. *People and Nature*.[[doi](https://doi.org/10.1002/pan3.70019)]
+  - Urgilés-Verdugo, C., Gallo-Viracocha, F., Esbach, M. S., & Escudero, A. (2025). Densidad y ocupación del tapir andino en los Andes del Norte del Ecuador. *Ecosistemas*, 34(1), 2859-2859.
+
+### 2024
+
+  - Esbach, M., Urgilés-Verdugo, C., Townsend, W., & Yiyoguaje, C. (2024). Hunting for Sustainability in the Cofán Territory of Zábalo, Ecuadorian Amazon. *Conservation Letters*, 17(6), e13065. [[pdf](), [doi](https://doi.org/10.1111/conl.13065)]
+  - Esbach, M., Correia, J. E., Valdivia, G., & Lu, F. (2024). Amazonian Conservation across Archipelagos of Indigenous Territories. *Conservation Biology*, e14407. [[pdf](), [doi](https://doi.org/10.1111/conl.13065)]
+  - Esbach, M., Lu, F., Silva, N., & Borman-Quenama, F. (2024). Conservation and Care: Cofán Lessons for Stewarding Abundance in Amazonia. *Human Ecology*, 52(4), 837–850. [[pdf](), [doi](https://doi.org/10.1111/conl.13065)]
+
+### 2023
+
+  - Esbach, M. (2023). Estimating Mammal Density from Track Counts Collected by Indigenous Amazonian Hunters. *Perspectives in Ecology and Conservation*, 21(3), 247–252. [[pdf](https://doi.org/10.1111/conl.13065), [doi](https://doi.org/10.1111/conl.13065)]
+
+### 2022
+  - Esbach, M. S., & Patra, R. K. (2022). Distance sampling from curving transects in dense tropical forests. Biotropica, 54(5), 1182-1189.
+  
+  - Esbach, M., Puri, M., Botero-Arias, R., & Loiselle, B. A. (2022). Beyond the Island: Integrated Approaches to Conserving Biodiversity Islands with Local Communities. In: *Biodiversity Islands: Pockets of Protected Land in Human Dominated Environments*. [[pdf](), [doi](https://doi.org/10.1111/conl.13065)]
+  
+### 2021
+
+  - L

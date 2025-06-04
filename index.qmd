@@ -1,0 +1,120 @@
+---
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+source("carousel/carousel.R")
+carousel("gallery-carousel", 3000, items = list(
+  list(image = "images/home/home1.jpg"),
+  list(image = "images/home/home2.jpg"),
+  list(image = "images/home/home3.jpg"),
+  list(image = "images/home/home4.jpg")
+))
+```
+
+<style>
+
+/* Remove Quarto’s layout padding */
+main#quarto-document-content,
+.page-columns,
+.content,
+.column-page {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove body scroll gaps */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* New wrapper to force full height */
+.fullscreen-carousel {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carousel container */
+#gallery-carousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Carousel item */
+#gallery-carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}
+
+#gallery-carousel .carousel-item.active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Image styling */
+#gallery-carousel img {
+  max-width: 68vw;
+  max-height: 68vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#quarto-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main#quarto-document-content {
+  flex: 1;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+#gallery-carousel img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+}
+}
+
+</style>

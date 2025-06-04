@@ -1,0 +1,45 @@
+<!-- quarto::quarto_preview() -->
+
+::: {.centered-image}
+![](images/home1.jpg){ width=80% }
+:::
+
+<style>
+
+/* Horizontally and softly vertically centered image */
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;         /* hide any spillover */
+}
+
+.centered-image img {
+  width: 100%;
+  max-width: 85vw;           /* Responsive width cap */
+  max-height: 85vh;          /* Prevent it from getting too tall */
+  height: auto;
+  object-fit: contain;       /* Maintain aspect ratio */
+  margin: 0 auto;
+}
+
+#quarto-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main#quarto-document-content {
+  flex: 1;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+<!-- * { -->
+<!--   outline: 1px dashed red; -->
+<!-- } -->
+
+</style>

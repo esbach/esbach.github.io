@@ -1,0 +1,197 @@
+---
+project:
+  type: website
+
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc-location: right
+    anchor-sections: false
+    link-external-newwindow: true
+
+execute:
+  echo: false
+
+lightbox: true
+---
+
+## Territorial Resilience
+
+:::::: columns
+::: {.column width="45%"}
+
+```{r}
+source("carousel/carousel-work.R")
+carousel("carousel-work1", duration = 10000, items = list(
+  list(caption = "Siekopai", image = "images/work/territory1.jpeg"),
+  list(caption = "Finishing up a transect", image = "images/work/territory2.jpeg"),
+  list(caption = "Siona", image = "images/work/territory3.jpeg"),
+  list(caption = "Truck ride", image = "images/work/territory4.jpeg"),
+  list(caption = "Siekopai territory", image = "images/work/territory5.jpeg")
+))
+```
+:::
+
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="50%"}
+Much of my current work explores how Indigenous peoples collectively sustain biocultural processes and territorial resilience of the Amazon. As a Co-Principal Investigator on a National Science Foundation Dynamics of Integrated Socio-Environmental Systems (DISES) [grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2108308&HistoricalAwards=false), I collaborate with Cofán, Siekopai, and Siona communities to investigate biocultural stewardship strategies and their impact on territorial resilience. Through transdisciplinary methods, I lead capacity-building initiatives, co-develop culturally grounded research tools, and support Indigenous researchers in analyzing and applying findings to enhance self-determined stewardship.
+
+-   Correia, J. E., Piaguage Lucitante, J., Weiss, L., Narváez, N., Lucitante, L., Biaguaje, A., ... & **Esbach, M.** (2025). Stimulating Reciprocity: How Human–plant Relations Support Indigenous Cultural Revitalization and Stewardship in the Ecuadorian Amazon. *People and Nature*, 7, 1151–1170. \[[doi](https://doi.org/10.1002/pan3.70019), [Relational Thinking Blog](https://relationalthinkingblog.com/2025/02/18/plain-language-summary-stimulating-reciprocity-how-human-plant-relations-support-indigenous-cultural-revitalization-and-stewardship-in-the-ecuadorian-amazon/)\]
+:::
+::::::
+
+<br>
+
+## Conservation and Care
+
+:::::: columns
+::: {.column width="45%"}
+```{r}
+source("carousel/carousel-work.R")
+carousel("carousel-work2", duration = 10000, items = list(
+  list(caption = "Cooling off in the Zábalo River", image = "images/work/cofan1.jpg"),
+  list(caption = "Community meeting", image = "images/work/cofan2.jpg"),
+  list(caption = "Looking for timber", image = "images/work/cofan3.jpg"),
+  list(caption = "Setting camera traps", image = "images/work/cofan4.jpg"),
+  list(caption = "Prepping fishing net", image = "images/work/cofan5.jpg")
+))
+```
+:::
+
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="50%"}
+This area of work focuses on how Indigenous practices of care, reciprocity, and governance sustain ecological abundance, cultural vitality, and territorial integrity in Amazonia. Through long-term collaboration with Cofán communities and regional analyses of Indigenous territories, I investigate how Indigenous stewardship contributes to biodiversity conservation and more equitable conservation models.
+
+-   **Esbach, M.**, Urgilés-Verdugo, C., Townsend, W., & Yiyoguaje, C. (2024). Hunting for Sustainability in the Cofán Territory of Zábalo, Ecuadorian Amazon. *Conservation Letters*, 17(6), e13065. \[[doi](https://doi.org/10.1111/conl.13065)\]
+
+-   **Esbach, M.**, Correia, J. E., Valdivia, G., & Lu, F. (2024). Amazonian Conservation across Archipelagos of Indigenous Territories. *Conservation Biology*, 39(2), e14407.\[[doi](https://doi.org/10.1111/cobi.14407), [Mongabay](https://es.mongabay.com/2024/12/territorios-indigenas-amazonicos-fragmentados-tambien-son-sitios-importantes-de-conservacion-estudio/)\]
+
+-   **Esbach, M.**, Lu, F., Silva, N., & Borman-Quenama, F. (2024). Conservation and Care: Cofán Lessons for Stewarding Abundance in Amazonia. *Human Ecology*, 52(4), 837–850. \[[doi](https://doi.org/10.1007/s10745-024-00532-2)\]
+
+-   **Esbach, M.**, Puri, M., Botero-Arias, R., & Loiselle, B. A. (2024). Beyond the Island: Integrated Approaches to Conserving Biodiversity Islands with Local Communities. In: *Biodiversity Islands: Pockets of Protected Land in Human Dominated Environments* (pp. 551-568). Cham: Springer International Publishing. \[[doi](https://doi.org/10.1007/978-3-030-92234-4_22)\]
+:::
+::::::
+
+<br>
+
+## Ecology and Natural History
+
+:::::: columns
+::: {.column width="45%"}
+```{r}
+source("carousel/carousel-work.R")
+carousel("carousel-work", duration = 10000, items = list(
+  list(caption = "Seagrass survey", image = "images/work/ecology1.jpg"),
+  list(caption = "Hunting peccary", image = "images/work/ecology2.jpg"),
+  list(caption = "Tapir print", image = "images/work/ecology3.jpeg")
+))
+```
+:::
+
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="50%"}
+Through collaborative research with Indigenous communities, much of my research seeks to understand the diversity of life — human and more-than-human. Together, we document species distributions, ecological dynamics, and cultural relationships with animals, contributing to both biodiversity science and Indigenous knowledge systems.
+
+-   Urgilés-Verdugo, C., Gallo-Viracocha, F., **Esbach, M.**, & Escudero, A. (2025). Densidad y ocupación del tapir andino en los Andes del Norte del Ecuador. *Ecosistemas*, 34(1), 2859-2859. \[[doi](https://doi.org/10.7818/ECOS.2859)\]
+
+-   Urgilés-Verdugo, C., Payaguaje, L., Biaguaje, A., Payaguaje, H., & **Esbach, M.** (2024). Anomalías en la coloración de piel y pelo de Dicotyles tajacu (Artiodactyla: Tayassuidae) y Dasyprocta fuliginosa (Rodentia: Dasyproctidae) en la Amazonía ecuatoriana. *Mammalogy Notes*, 10(2), 412-412. \[[doi](https://doi.org/10.47603/mano.v10n2.412)\]
+
+-   Payaguaje, H.... **Esbach, M.** (2023). Animales del Territorio Siekopai, Sucumbíos, Ecuador. *Nationalidad Siekopai*. \[[doi](10.6084/m9.figshare.24922029)\]
+
+-   Yiyocuro, H.... **Esbach, M.** (2023). Animales del Territorio Siona, Sucumbíos, Ecuador. *Nationalidad Siona*. \[[doi](10.6084/m9.figshare.24922083)\]
+
+-   Quenama, A.... **Esbach, M.** (2023). Animales del Territorio Cofán de Sinangoe, Sucumbíos, Ecuador. *Comunidad Cofán de Sinangoe*. \[[doi](10.6084/m9.figshare.24922053)\]
+:::
+::::::
+
+<br>
+
+## Field Work and Methods
+
+:::::: columns
+::: {.column width="45%"}
+```{r}
+source("carousel/carousel-work.R")
+carousel("carousel-work4", duration = 10000, items = list(
+  list(caption = "Transect surveys", image = "images/work/methods1.jpg"),
+  list(caption = "Camera trap surveys", image = "images/work/methods2.jpg"),
+  list(caption = "Mapping work", image = "images/work/methods3.jpeg"),
+  list(caption = "Mapping work", image = "images/work/methods4.jpg")
+))
+```
+:::
+
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="50%"}
+As an interdisciplinary researcher, I combine ecological monitoring with participatory methods to better understand and support conservation in complex environments. My work includes developing tools for estimating animal populations in dense forests, collaborating with Indigenous trackers, and applying approaches like camera trapping, participatory mapping, and spatial analysis to tackle practical challenges in biodiversity research.
+
+-   **Esbach, M.** (2023). Estimating Mammal Density from Track Counts Collected by Indigenous Amazonian Hunters. *Perspectives in Ecology and Conservation*, 21(3), 247–252. \[[doi](https://doi.org/10.1016/j.pecon.2023.07.005)\]
+
+-   **Esbach, M.** & Patra, R. K. (2022). Distance Sampling from Curving Transects in Dense Tropical Forests. *Biotropica*, 54(5), 1182-1189. \[[doi](https://doi.org/10.1111/btp.13141)\]
+:::
+::::::
+
+<style>
+
+/* Reduce font size for bullet lists in columns */
+.column li {
+  font-size: 0.80em;
+}
+
+/* Mobile sizing */
+@media (max-width: 768px) {
+  .column[style] {
+    width: 100% !important;
+    padding: 0% 2% 0% 2%;
+    display: block;
+  }
+
+  .column img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0% 0% 0% 0%;
+  }
+  
+  .carousel-inner img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Carousel */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px; /* rounded corners */
+}
+
+.carousel-indicators {
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.carousel-caption {
+  position: static;
+  padding-top: 0.5rem;
+  color: #333;
+  text-align: center;
+}
+
+</style>

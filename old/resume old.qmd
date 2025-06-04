@@ -1,0 +1,206 @@
+---
+title: "Michael Esbach"
+format:
+  html:
+    page-layout: custom
+    toc: false
+    navbar: false
+    include-in-header:
+      text: |
+        <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+---
+
+<p style="margin-top: 0; margin-bottom: .5em; color: #666;">
+Conservation Scientist · Amazon Specialist · Interdisciplinary Researcher
+</p>
+
+::: cv-main
+### Highlights
+
+- **Conservation:** 15+ years building stewardship partnerships and leading capacity-building.  
+- **Interdisciplinary Research:** Driving collaborative studies that yield policy-relevant insights.  
+- **Equitable Partnerships:** Cross-cultural collaborations grounded in local knowledge.  
+- **Data & Monitoring:** Designing monitoring and evaluation frameworks for conservation.  
+- **Strategic Planning & Funding:** Securing and managing multi-stakeholder projects.
+
+### Employment History
+
+#### Senior Researcher, Colorado State University
+-   Fosterpartnerships with Indigenous peoples in six territories in the Ecuadorian Amazon, co-designing and adapting research projects to meet community needs.
+-   Lead data collection and capacity-building initiatives, co-developing culturally relevant instruments and conducting training for co-implementation by Indigenous researchers.
+-   Facilitate collaborative data analysis and interpretation, guiding Indigenous partners in using findings to strengthen territorial governance.
+
+#### Program Fellow, Andes Amazon Initiative, Gordon and Betty Moore Foundation
+-   Co-design, monitor, and adaptively manage grants focused on land tenure designation and effective management of Indigenous lands and conservation areas across the Amazon.
+-   Developed an theory of change and monitoring plan, including systems for data collection, analysis, and visualization to improve management and strategic decision-making.
+-   Led 7 grants (6 million) and co-lead 11 grants (12 million) with Indigenous organizations, NGOs, and research institutes to meet designation and management goals.
+
+
+### Education
+
+- Ph.D. Interdisciplinary Ecology, University of Florida (2020)  
+- B.A. Sustainable Development, University of Virginia (2008)
+:::
+
+<aside class="cv-sidebar">
+**Contact**
+msesbach@gmail.com
+
+**Skills**
+R, Python, SQL
+
+**Languages**
+English, Spanish
+</aside>
+
+<style>
+
+/*–– override Quarto footer ––*/
+footer { display: none !important; }
+
+/*–– center the "paper" ––*/
+html, body {
+  background: #eee;
+  margin: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+/*–– paged.js gutters ––*/
+:root {
+  --pagedjs-size: letter;
+  --pagedjs-margin-top:    0.1in !important;
+  --pagedjs-margin-right:  0.5in !important;
+  --pagedjs-margin-bottom: 0.1in !important;
+  --pagedjs-margin-left:   0.5in !important;
+}
+
+/*–– white "paper" styling ––*/
+.pagedjs_pagebox {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 8.5in;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*–– left column floats and fragments ––*/
+.cv-main {
+  float: left;
+  width: 75%;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/*–– right sidebar box (won't split) ––*/
+.cv-sidebar {
+  float: right;
+  width: 23%;
+  margin-left: 2%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  font-size: 0.9em;
+  line-height: 1.3;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/*–– one-off heading and list sizes ––*/
+h1 { font-size: 2rem !important; }
+h3 { font-size: 1.255rem !important; }
+h4 { font-size: 1.25rem !important; }
+p { font-size: 1rem !important; }
+ul, ol { font-size: 0.89rem !important; }
+
+/* 1) Override ANY inline min-height on #quarto-content */
+#quarto-content {
+  /* neutralize the 100vh clamp */
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* also cover the main container if it gets its own inline style */
+#quarto-document-content {
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Fix for PagedJS page breaks and content flow */
+@media screen {
+  /* Prevent unwanted page breaks in screen view */
+  .pagedjs_page {
+    min-height: unset !important;
+    height: auto !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+    break-after: avoid !important;
+    break-before: avoid !important;
+  }
+  
+  /* Force content to flow continuously */
+  .pagedjs_pages {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  /* Make sure fragments stay connected */
+  .pagedjs_pagebox {
+    height: auto !important;
+    min-height: unset !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05) !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Ensure proper content flow in print view */
+@media print {
+  .pagedjs_page {
+    margin-bottom: 0;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Remove any artificial page height limitations */
+.pagedjs_area {
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Ensure content isn't being clipped */
+.pagedjs_page_content {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+</style>
+
+<script>
+// Add this to your <script> section
+document.addEventListener('DOMContentLoaded', function() {
+  // Give PagedJS time to initialize
+  setTimeout(function() {
+    // Force reflow of content
+    document.querySelectorAll('.pagedjs_page').forEach(function(page) {
+      page.style.height = 'auto';
+      page.style.overflow = 'visible';
+    });
+  }, 1000);
+});
+<script>

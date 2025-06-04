@@ -1,0 +1,109 @@
+---
+project:
+  type: website
+
+format:
+  html:
+    page-layout: full
+    anchor-sections: false
+    link-external-newwindow: true
+
+lightbox: true
+---
+
+:::::::: columns
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="30%"}
+<!-- ![](images/about.jpg) -->
+
+![](images/about/about-desktop.jpg){.img-desktop} 
+![](images/about/about-mobile.jpg){.img-mobile} 
+<h4>Photo: [Cristina Carrizosa](https://www.cristinacarrizosa.com)</h4>
+:::
+
+::: {.column width="5%"}
+<!-- spacer -->
+:::
+
+::: {.column width="50%"}
+## ABOUT
+
+Hello! I’m an interdisciplinary scientist dedicated to environmental sustainability and social justice, particularly in Amazonia. My professional and academic work focus on Indigenous peoples’ rights, natural resource management, and biocultural conservation.<br><br> I’ve worked across academia, philanthropy, and the nonprofit sector to support Indigenous stewardship and equitable conservation. As a Program Fellow with the [Andes-Amazon Initiative](https://www.moore.org/initiative-strategy-detail?initiativeId=andes-amazon-initiative) at the Gordon and Betty Moore Foundation, I developed grants advancing land tenure and conservation across five Amazonian countries and developed monitoring systems to guide strategic decision-making. At Princeton University’s [High Meadows Environmental Institute](https://environment.princeton.edu/), I partnered with Cofán, Siekopai, and Siona communities to research Indigenous governance and ecological resilience. Earlier in my career, I supported community-based conservation in Melanesia through my work at the American Museum of Natural History’s 
+[Center for Biodiversity and Conservation](https://www.amnh.org/research/center-for-biodiversity-conservation). Want more details? See a brief <a href="/resume/resume.html" target="_blank">resume</a>.
+:::
+
+::: {.column width="10%"}
+<!-- spacer -->
+:::
+::::::::
+
+<style>
+
+/* Link Hover for CC photo */
+h4 a:hover {
+  text-decoration: underline;
+}
+
+/* Normal text links */
+p a, li a {
+  text-decoration: none;   /* Removes underline */
+}
+
+p a:hover, li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Desktop */
+.img-desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 4% 0% 3% 0%;
+}
+
+.img-mobile {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* Override Quarto's inline column width */
+  .column[style] {
+    width: 100% !important;
+    padding: 0% 4% 0% 4%;
+    display: block;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0% 0% 3% 0%;
+  }
+
+  .column:has(h2), .column:has(h3), .column:has(p) {
+    width: 100% !important;
+    padding: 0% 4% 0% 4%;
+    margin-top: 0;
+  }
+  
+  .img-mobile + h4 {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+}
+
+</style>
+

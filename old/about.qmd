@@ -1,0 +1,20 @@
+---
+# title: "Michael Esbach"
+image: images/about.jpg
+about:
+  template: trestles
+  image-shape: "rectangle"
+  image-width: 20em
+  # links:
+  #   - text: "{{< fa solid envelope size=Huge >}}"
+  #     href: "mailto:msesbach@gmail.com"
+  #   - text: "{{< fa brands linkedin size=Huge >}}"
+  #     href: https://www.linkedin.com/in/michael-esbach-32358227/
+  #   - text: "{{< fa brands researchgate size=Huge >}}"
+  #     href: https://www.researchgate.net/profile/Michael-Esbach-2
+page-layout: full
+---
+
+## Michael Esbach
+
+Hello! I’m an interdisciplinary scientist dedicated to environmental sustainability and social justice, particularly in Amazonia. My professional and academic work focus on Indigenous peoples’ rights, natural resource management, and biocultural conservation.<br><br> I’ve worked across academia, philanthropy, and the nonprofit sector to support Indigenous stewardship and equitable conservation. As a Program Fellow with the <a href="https://www.moore.org/initiative-strategy-detail?initiativeId=andes-amazon-initiative" target="_blank">Andes-Amazon Initiative</a> at the Gordon and Betty Moore Foundation, I developed grants advancing land tenure and conservation across five Amazonian countries and developed monitoring systems to guide strategic decision-making. At Princeton University’s <a href="https://environment.princeton.edu/" target="_blank">High Meadows Environmental Institute</a>, I partnered with Cofán, Siekopai, and Siona communities to research Indigenous governance and ecological resilience. Earlier in my career, I supported community-based conservation in Melanesia through my work at the American Museum of Natural History’s <a href="https://www.amnh.org/research/center-for-biodiversity-conservation" target="_blank">Center for Biodiversity and Conservation</a>.
