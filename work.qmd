@@ -24,11 +24,11 @@ lightbox: true
 ```{r}
 source("carousel/carousel-work.R")
 carousel("carousel-work1", duration = 10000, items = list(
-  list(caption = "Siekopai", image = "images/work/web/territory1.webp"),
-  list(caption = "Finishing up a transect", image = "images/work/web/territory2.webp"),
-  list(caption = "Siona", image = "images/work/web/territory3.webp"),
-  list(caption = "Truck ride", image = "images/work/web/territory4.webp"),
-  list(caption = "Siekopai territory", image = "images/work/web/territory5.webp")
+  list(caption = "Siekopai", image = "images/work/web/territory1.jpg"),
+  list(caption = "Finishing up a transect", image = "images/work/web/territory2.jpg"),
+  list(caption = "Siona", image = "images/work/web/territory3.jpg"),
+  list(caption = "Truck ride", image = "images/work/web/territory4.jpg"),
+  list(caption = "Siekopai territory", image = "images/work/web/territory5.jpg")
 ))
 ```
 :::
@@ -53,11 +53,11 @@ Much of my current work explores how Indigenous peoples collectively sustain bio
 ```{r}
 source("carousel/carousel-work.R")
 carousel("carousel-work2", duration = 10000, items = list(
-  list(caption = "Cooling off in the Zábalo River", image = "images/work/cofan1.webp"),
-  list(caption = "Community meeting", image = "images/work/web/cofan2.webp"),
-  list(caption = "Looking for timber", image = "images/work/web/cofan3.webp"),
-  list(caption = "Setting camera traps", image = "images/work/web/cofan4.webp"),
-  list(caption = "Prepping fishing net", image = "images/work/web/cofan5.webp")
+  list(caption = "Cooling off in the Zábalo River", image = "images/work/web/cofan1.jpg"),
+  list(caption = "Community meeting", image = "images/work/web/cofan2.jpg"),
+  list(caption = "Looking for timber", image = "images/work/web/cofan3.jpg"),
+  list(caption = "Setting camera traps", image = "images/work/web/cofan4.jpg"),
+  list(caption = "Prepping fishing net", image = "images/work/web/cofan5.jpg")
 ))
 ```
 :::
@@ -88,9 +88,9 @@ This area of work focuses on how Indigenous practices of care, reciprocity, and 
 ```{r}
 source("carousel/carousel-work.R")
 carousel("carousel-work", duration = 10000, items = list(
-  list(caption = "Seagrass survey", image = "images/work/web/ecology1.webp"),
-  list(caption = "Hunting peccary", image = "images/work/web/ecology2.webp"),
-  list(caption = "Tapir print", image = "images/work/web/ecology3.webp")
+  list(caption = "Seagrass survey", image = "images/work/web/ecology1.jpg"),
+  list(caption = "Hunting peccary", image = "images/work/web/ecology2.jpg"),
+  list(caption = "Tapir print", image = "images/work/web/ecology3.jpg")
 ))
 ```
 :::
@@ -123,10 +123,10 @@ Through collaborative research with Indigenous communities, much of my research 
 ```{r}
 source("carousel/carousel-work.R")
 carousel("carousel-work4", duration = 10000, items = list(
-  list(caption = "Transect surveys", image = "images/work/web/methods1.webp"),
-  list(caption = "Camera trap surveys", image = "images/work/web/methods2.webp"),
-  list(caption = "Mapping work", image = "images/work/web/methods3.webp"),
-  list(caption = "Mapping work", image = "images/work/web/methods4.webp")
+  list(caption = "Transect surveys", image = "images/work/web/methods1.jpg"),
+  list(caption = "Camera trap surveys", image = "images/work/web/methods2.jpg"),
+  list(caption = "Camera trap surveys", image = "images/work/web/methods3.jpg"),
+  list(caption = "Mapping work", image = "images/work/web/methods4.jpg")
 ))
 ```
 :::
