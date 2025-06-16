@@ -7,10 +7,10 @@ execute:
 ```{r}
 source("carousel/carousel.R")
 carousel("gallery-carousel", 3000, items = list(
-  list(image = "images/home/home1.jpg"),
-  list(image = "images/home/home2.jpg"),
-  list(image = "images/home/home3.jpg"),
-  list(image = "images/home/home4.jpg")
+  list(image = "images/home/web/home1.webp"),
+  list(image = "images/home/web/home2.webp"),
+  list(image = "images/home/web/home3.webp"),
+  list(image = "images/home/web/home4.webp")
 ))
 ```
 

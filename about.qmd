@@ -19,8 +19,8 @@ lightbox: true
 ::: {.column width="30%"}
 <!-- ![](images/about.jpg) -->
 
-![](images/about/about-desktop.jpg){.img-desktop} 
-![](images/about/about-mobile.jpg){.img-mobile} 
+![](images/about/web/about-desktop.webp){.img-desktop} 
+![](images/about/web/about-mobile.webp){.img-mobile} 
 <h4>Photo: [Cristina Carrizosa](https://www.cristinacarrizosa.com)</h4>
 :::
 
@@ -85,7 +85,7 @@ p a:hover, li a:hover {
 
   .img-mobile {
     display: block;
-    width: 70%;
+    width: 90%;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
