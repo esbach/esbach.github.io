@@ -1,4 +1,5 @@
 ---
+title: "Work | Michael Esbach"
 project:
   type: website
 
@@ -145,6 +146,11 @@ As an interdisciplinary researcher, I combine ecological monitoring with partici
 ::::::
 
 <style>
+
+/* hide title block but get browser tab title*/
+.quarto-title-block {
+  display: none !important;
+}
 
 /* Reduce font size for bullet lists in columns */
 .column li {

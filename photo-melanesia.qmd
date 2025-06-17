@@ -1,5 +1,5 @@
 ---
-title: "Melanesia"
+title: "Melanesia Photography | Michael Esbach"
 format:
   html:
     lightbox: true
@@ -7,6 +7,8 @@ format:
     anchor-sections: false
     css: styles.css
 ---
+
+## Melanesia
 
 <div class="masonry-gallery">
 
@@ -40,6 +42,11 @@ for (img in image_files) {
 </div>
 
 <style>
+
+/* hide title block but get browser tab title*/
+.quarto-title-block {
+  display: none !important;
+}
 
 .masonry-gallery {
   column-count: 3;

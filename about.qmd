@@ -1,4 +1,5 @@
 ---
+title: "About | Michael Esbach"
 project:
   type: website
 
@@ -41,6 +42,11 @@ Hello! I’m an interdisciplinary scientist dedicated to environmental sustainab
 ::::::::
 
 <style>
+
+/* hide title block but get browser tab title*/
+.quarto-title-block {
+  display: none !important;
+}
 
 /* Link Hover for CC photo */
 h4 a:hover {

@@ -1,5 +1,5 @@
 ---
-description: "Michael Esbach - Home"
+title: "Home | Michael Esbach"
 format: html
 execute:
   echo: false
@@ -16,6 +16,11 @@ carousel("gallery-carousel", 3000, items = list(
 ```
 
 <style>
+
+/* hide title block but get browser tab title*/
+.quarto-title-block {
+  display: none !important;
+}
 
 /* Remove Quarto’s layout padding */
 main#quarto-document-content,
