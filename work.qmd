@@ -42,6 +42,8 @@ carousel("carousel-work1", duration = 10000, items = list(
 Much of my current work explores how Indigenous peoples collectively sustain biocultural processes and territorial resilience of the Amazon. As a Co-Principal Investigator on a National Science Foundation Dynamics of Integrated Socio-Environmental Systems (DISES) [grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2108308&HistoricalAwards=false), I collaborate with Cofán, Siekopai, and Siona communities to investigate biocultural stewardship strategies and their impact on territorial resilience. Through transdisciplinary methods, I lead capacity-building initiatives, co-develop culturally grounded research tools, and support Indigenous researchers in analyzing and applying findings to enhance self-determined stewardship.
 
 -   Correia, J. E., Piaguage Lucitante, J., Weiss, L., Narváez, N., Lucitante, L., Biaguaje, A., ... & **Esbach, M.** (2025). Stimulating Reciprocity: How Human–plant Relations Support Indigenous Cultural Revitalization and Stewardship in the Ecuadorian Amazon. *People and Nature*, 7, 1151–1170. \[[doi](https://doi.org/10.1002/pan3.70019), [Relational Thinking Blog](https://relationalthinkingblog.com/2025/02/18/plain-language-summary-stimulating-reciprocity-how-human-plant-relations-support-indigenous-cultural-revitalization-and-stewardship-in-the-ecuadorian-amazon/)\]
+
+-   Correia, J. E., Walker, R. T., Simmons, C. S., Urgilés, C., Narváez Quenama, N., Yiyocuro, L., ... & **Esbach, M.** (2025). Biocultural Geographies: Stewardship, Indigenous Territories, and Conservation in Ecuador’s Amazon. *Annals of the American Association of Geographers*, 1-19. \[[doi](https://doi.org/10.1080/24694452.2025.2511942)\]
 :::
 ::::::
 
