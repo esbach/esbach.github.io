@@ -1,4 +1,5 @@
 library(htmltools)
+library(dplyr)
 
 # Top-level carousel function
 carousel <- function(id, duration, items) {

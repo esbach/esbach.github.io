@@ -6,6 +6,7 @@ project:
   - resume/resume.css
   - resume/paged.polyfill.js
   - images/work
+  - googleac0d1b9cf0cb3502.html
 
 website:
   navbar:
