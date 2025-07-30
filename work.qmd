@@ -22,7 +22,7 @@ lightbox: true
 :::::: columns
 ::: {.column width="45%"}
 
-```{r}
+```{r, echo=FALSE}
 source("carousel/carousel-work.R")
 carousel("carousel-work1", duration = 10000, items = list(
   list(caption = "Siekopai", image = "images/work/web/territory1.jpg"),
