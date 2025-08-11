@@ -131,28 +131,60 @@ body {
   font-size: 1.05rem;
 }
 
-/* Hide the default mobile lines icon */
-.navbar-toggler .navbar-toggler-icon {
-  display: none;
-}
+/* Hide Bootstrap's default icon (you already have this) */
+.navbar-toggler .navbar-toggler-icon { display: none; }
 
-/* Create custom lines */
-.navbar-toggler::before,
-.navbar-toggler::after {
-  content: '';
-  display: block;
-  width: 30px; /* Adjust width as needed */
-  height: 2px; /* Adjust thickness as needed */
-  background-color: grey; /* Adjust color as needed */
-  margin: 5px 0; /* Adjust spacing as needed */
-}
-
-/* Remove border, background, and shadow from the hamburger toggle */
+/* Toggler hit area + color uses current text color */
 .navbar-toggler {
+  position: relative;
+  width: 30px;
+  height: 22px;
+  color: grey;                   /* or inherit */
   border: none !important;
   background: transparent !important;
   box-shadow: none !important;
-  outline: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Two bars */
+.navbar-toggler::before,
+.navbar-toggler::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  background-color: currentColor;
+  transform-origin: center;
+  transition: transform 200ms ease, top 200ms ease, opacity 150ms ease;
+}
+
+/* Closed positions */
+.navbar-toggler::before { top: 6px;  transform: translateX(-50%) rotate(0); }
+.navbar-toggler::after  { top: 14px; transform: translateX(-50%) rotate(0); }
+
+/* Open (menu expanded) → make an X */
+.navbar-toggler[aria-expanded="true"]::before {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"]::after {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Optional: better focus */
+.navbar-toggler:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Optional: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-toggler::before,
+  .navbar-toggler::after { transition: none; }
 }
 
 /* Remove center footer if never used */

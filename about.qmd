@@ -75,6 +75,14 @@ p a:hover, li a:hover {
   display: none;
 }
 
+@media (max-width: 991px) {
+  .img-desktop {
+    padding: 10% 0% 3% 0%;
+
+  }
+}
+
+
 /* Mobile */
 @media (max-width: 768px) {
 
