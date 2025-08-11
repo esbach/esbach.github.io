@@ -182,6 +182,11 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.nav-footer {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+
 /* Remove center footer if never used */
 .nav-footer-center {
   display: none;
