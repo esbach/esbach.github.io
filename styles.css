@@ -165,6 +165,13 @@ body {
 .navbar-toggler::before { top: 6px;  transform: translateX(-50%) rotate(0); }
 .navbar-toggler::after  { top: 14px; transform: translateX(-50%) rotate(0); }
 
+/* X-only size (when menu is open) */
+.navbar-toggler[aria-expanded="true"]::before,
+.navbar-toggler[aria-expanded="true"]::after {
+  width: 20px;   /* X arm length — tweak me */
+  height: 2px;   /* X thickness — optional */
+}
+
 /* Open (menu expanded) → make an X */
 .navbar-toggler[aria-expanded="true"]::before {
   top: 50%;
@@ -173,18 +180,6 @@ body {
 .navbar-toggler[aria-expanded="true"]::after {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-/* Optional: better focus */
-.navbar-toggler:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
-}
-
-/* Optional: reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  .navbar-toggler::before,
-  .navbar-toggler::after { transition: none; }
 }
 
 /* Remove center footer if never used */
