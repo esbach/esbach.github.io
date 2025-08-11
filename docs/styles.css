@@ -83,22 +83,6 @@
   opacity: 1;
 }
 
-
-/* Remove center footer if never used */
-.nav-footer-center {
-  display: none;
-}
-
-/* Remove underline from footer */
-.nav-footer a {
-  text-decoration: none;
-}
-
-.nav-footer a:hover {
-  text-decoration: underline;
-}
-
-
 /* Set global font weight */
 /* Match Hugo Story heading style */
 h1, h2, h3, h4, h5, h6 {
@@ -171,20 +155,38 @@ body {
   outline: none !important;
 }
 
+/* Remove center footer if never used */
+.nav-footer-center {
+  display: none;
+}
+
+/* Remove underline from footer */
+.nav-footer a {
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  text-decoration: underline;
+}
+
 /* Adjust footer order on small screens */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .nav-footer {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center;  /* Center text inside each */
+    align-items: center;
+    text-align: center;
+    padding-bottom: 22px;
   }
 
-  .nav-footer-left {
-    order: 2;
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    order: initial;              /* reset first */
+    margin: 0 !important;        /* kill margin-left:auto from theme */
+    width: 100%;
   }
 
-  .nav-footer-right {
-    order: 1;
-  }
+  .nav-footer-right { order: 1; }
+  .nav-footer-left  { order: 2; }
 }

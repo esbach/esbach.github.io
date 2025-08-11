@@ -162,8 +162,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <style>
 
-/* hide title block but keep browser tab title */
-.quarto-title-block { display: none !important; }
+/* hide title block but get browser tab title*/
+.quarto-title-block {
+  display: none !important;
+}
 
 /* Remove Quarto’s layout padding */
 main#quarto-document-content,
@@ -174,36 +176,17 @@ main#quarto-document-content,
   margin: 0 !important;
 }
 
-/* Let the page scroll by at least 1px so mobile chrome can collapse */
-html, body {
+/* Remove body scroll gaps */
+body, html {
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  /* allow scrolling! */
-  overflow-y: auto;
+  height: 100dvh;
+  overflow: hidden;
 }
 
-/* Use a flex column layout for the whole page */
-#quarto-content {
-  display: flex;
-  flex-direction: column;
-  /* svh respects visible toolbars; +1px enables the micro-scroll */
-  min-height: calc(100svh + 1px);
-}
-
-/* Main fills remaining space; keep internals tidy without locking the page */
-main#quarto-document-content {
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* ok here; not on html/body */
-}
-
-/* Fullscreen wrapper should be flexible, not hard-locked to dvh */
+/* New wrapper to force full height */
 .fullscreen-carousel {
-  /* was: height: 100dvh; */
-  min-height: 100svh;
+  height: 100dvh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -223,7 +206,7 @@ main#quarto-document-content {
   overflow: hidden;
 }
 
-/* Carousel items */
+/* Carousel item */
 #gallery-carousel .carousel-item {
   display: flex;
   justify-content: center;
@@ -231,21 +214,23 @@ main#quarto-document-content {
   height: 100%;
   width: 100%;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   transition: opacity 1.5s ease-in-out;
   opacity: 0;
   z-index: 0;
 }
+
 #gallery-carousel .carousel-item.active {
   opacity: 1;
   position: relative;
   z-index: 1;
 }
 
-/* Image sizing (slightly looser on mobile to avoid footer overlap) */
+/* Image styling */
 #gallery-carousel img {
   max-width: 68vw;
-  max-height: 68svh;
+  max-height: 68vh;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -255,18 +240,31 @@ main#quarto-document-content {
   box-sizing: border-box;
 }
 
-/* Footer: sits at the bottom naturally; protect for notches */
-footer {
-  margin-top: auto;
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+#quarto-content {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Mobile tweaks */
+main#quarto-document-content {
+  flex: 1;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #gallery-carousel img {
     max-width: 80vw;
-    max-height: 80svh;
+    max-height: 80vh;
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
   }
 }
 
