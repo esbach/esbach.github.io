@@ -21,14 +21,8 @@ website:
         text: about
       - href: work.qmd
         text: work
-      - text: photography
-        menu: 
-        - href: photo-amazonia.qmd
-          text: amazonia
-        - href: photo-melanesia.qmd
-          text: melanesia
-        - href: photo-africa.qmd
-          text: africa
+      - href: photo.qmd
+        text: photography
   favicon: images/logos/favicon.png
   search: false
   page-footer: 

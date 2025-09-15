@@ -131,6 +131,11 @@ body {
   font-size: 1.05rem;
 }
 
+/* Ensure all links have normal font weight */
+a {
+  font-weight: 300 !important;
+}
+
 /* Hide Bootstrap's default icon (you already have this) */
 .navbar-toggler .navbar-toggler-icon { display: none; }
 
