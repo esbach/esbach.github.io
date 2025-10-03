@@ -31,7 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -103,7 +102,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
@@ -129,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="work-grid">
 <div class="work-box">
 <div class="work-header">
-<h2 class="anchored">
+<h2>
 Territorial Resilience
 </h2>
 </div>
@@ -200,7 +201,7 @@ Territorial Resilience
 </div>
 <div class="work-box">
 <div class="work-header">
-<h2 class="anchored">
+<h2>
 Conservation and Care
 </h2>
 </div>
@@ -273,7 +274,7 @@ Conservation and Care
 </div>
 <div class="work-box">
 <div class="work-header">
-<h2 class="anchored">
+<h2>
 Ecology and Natural History
 </h2>
 </div>
@@ -333,7 +334,7 @@ Ecology and Natural History
 </div>
 <div class="work-box">
 <div class="work-header">
-<h2 class="anchored">
+<h2>
 Field Work and Methods
 </h2>
 </div>
@@ -671,13 +672,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
