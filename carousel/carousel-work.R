@@ -14,12 +14,33 @@ carousel <- function(id, duration, items) {
                      tagList(lapply(items, function(item) item$item))
   )
   
+  # Control buttons
+  prev_button <- tags$button(
+    class = "carousel-control-prev",
+    type = "button",
+    `data-bs-target` = paste0("#", id),
+    `data-bs-slide` = "prev",
+    tags$span(class = "carousel-control-prev-icon", `aria-hidden` = "true"),
+    tags$span(class = "visually-hidden", "Previous")
+  )
+  
+  next_button <- tags$button(
+    class = "carousel-control-next",
+    type = "button",
+    `data-bs-target` = paste0("#", id),
+    `data-bs-slide` = "next",
+    tags$span(class = "carousel-control-next-icon", `aria-hidden` = "true"),
+    tags$span(class = "visually-hidden", "Next")
+  )
+  
   indicators <- div(class = "carousel-indicators",
-                    tagList(lapply(items, function(item) item$button))
+                    prev_button,
+                    tagList(lapply(items, function(item) item$button)),
+                    next_button
   )
   
   # Final carousel container
-  div(id = id, class = "carousel carousel-dark slide", `data-bs-ride` = "carousel",
+  div(id = id, class = "carousel slide", `data-bs-ride` = "carousel",
       inner_items,
       indicators
   )

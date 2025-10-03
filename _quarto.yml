@@ -19,7 +19,7 @@ website:
         text: home
       - href: about.qmd
         text: about
-      - href: work.qmd
+      - href: work2.qmd
         text: work
       - href: photo.qmd
         text: photography
